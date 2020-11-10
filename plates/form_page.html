@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{%extends 'base.html'%}
+    {%block body_b%}
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'mycss/form.css' %}">
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class='form-group jumbotron abc' style='background:url(https://images.all-free-download.com/images/graphicthumb/starry_night_192398.jpg)';>
+           <h1 style="color:darkgoldenrod;">INTROSPECT</h1><br><hr>
+            <form method='POST'style='color:white'> 
+                {{form.as_p}}
+                {%csrf_token%}
+                <input id='btn' class="btn btn-primary" type="submit" name="submit" style="background:transparent">
+            </form>     
+        </div>
+    {%endblock%}    

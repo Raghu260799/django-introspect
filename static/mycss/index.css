@@ -1,0 +1,40 @@
+.A{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: snow;
+}
+
+body{
+    background: url(https://images.all-free-download.com/images/graphicthumb/starry_night_192398.jpg)
+}
+
+#h1{
+    text-decoration: underline ;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.jumbotron{
+    background-color: transparent;
+}
+
+@keyframes example {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;}
+  }
+  
+
+  p{
+      color: darkviolet;
+      size: 4em;
+  }
+
+  #hh{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }

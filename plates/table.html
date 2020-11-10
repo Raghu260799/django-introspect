@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+    {%block body_b%}
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'mycss/table.css' %}">
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class='data jumbotron' style='background:url(https://images.all-free-download.com/images/graphicthumb/starry_night_192398.jpg)';>
+            <h1 style="color:darkgoldenrod;">REPORT</h1><br><hr>
+            {% if form_rec %}
+                <table border="2" style="color: white;" >
+                   <thead>
+                        <th>Date</th>
+                        <th>Exercise</th>
+                        <th>Meditation</th>
+                        <th>Devotion</th>
+                        <th>Practice</th>
+                        <th>No_junkFood</th>
+                        <th>Optimistic</th>
+                        <th>Manan</th>
+                        <th>Shoka</th>
+                        <th>Vyartha</th>
+                        <th>Glitch</th>
+                    </thead>
+                    {%for i in form_rec%}
+                        <tr>
+                            <td>{{i.date}}</td>
+                            <td>{{i.Exercise}}</td>
+                            <td>{{i.Meditation}}</td>
+                            <td>{{i.Devotion}}</td>
+                            <td>{{i.Practice}}</td>
+                            <td>{{i.No_junkFood}}</td>
+                            <td>{{i.Optimistic}}</td>
+                            <td>{{i.Manan}}</td>
+                            <td>{{i.Shoka}}</td>
+                            <td>{{i.Vyartha}}</td>
+                            <td>{{i.Glitch}}</td>
+                        </tr>
+                    {%endfor%}
+                </table>
+            {%endif%}
+
+        </div>
+    {%endblock%}    
